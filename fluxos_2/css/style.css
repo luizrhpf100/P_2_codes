@@ -484,10 +484,10 @@ main{
 
 .postar_bottom{
     display: flex;
+    flex-grow: 0.1;
     flex-direction: row;
     justify-content: space-between;
-    padding: 3rem;
-
+    margin-bottom: 1rem;
 }
 
 .postar_bottom .voltar {

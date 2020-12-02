@@ -11,18 +11,19 @@
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
         <script src="js/java.js"></script>
+        <script src="js/java_publicar.js"></script>
     </head>
     <body class="fundo">
         <header>
             <div class="toggle-btn">
                 <i class="fa fa-bars"></i>
-            </div>  
+            </div>
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
             <h1>
                 E-scout
             </h1>
         </header>
-        <main class="menu">
+        <main class="menu_postando">
             <div class="list">
                 <div class="list-2">
                     <div class="item">Ajustes</div>
@@ -31,43 +32,37 @@
                     <div class="item">Inscrições</div>
                 </div>
             </div>
-            <p class="feed">Feed</p>
-            <ul>
-                <li class="post-1">
-                    <div class="profile">
+            <p class="postar_postando">
+                Editar Posts
+            </p>
+            <ul class="postando">
+                <li class="postando_top">
+                    <div class="profile_postando">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         <p>
-                            Redcanids
+                            Pedro S.
                         </p>
                     </div>
-                    <div class="img">
-                        <img src="img/RED_Canids_Kalunga.png" alt="post">
+                    <div class= "publicar_video"> 
+                        <video width="320" height="240" controls>
+                            <source src="video/Jogada.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <div class="like">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                        <i class="fa fa-comment-o" aria-hidden="true"></i>
-                        <p>Encontro de fãs em Recife!</p>
-                    </div>
+                    <form class="form_postar">
+                        <label>Adicionar comentário:</label>
+                        <input class="comentário" type="text" value="...">
+                        <label>Marcar alguém:</label>
+                        <input class="marcar" type="text" value=" @">
+                    </form>
                 </li>
-                <li class= "post-2">
-                    <div class="profile-2">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        <a href="perfil_time.html">
-                            PaINgaming
-                        </a>
-                    </div>
-                    <div class= "Seletivo"> 
-                        <i class="fa fa-id-card-o" aria-hidden="true"></i>
-                    </div>
-                    <div class="like">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                        <i class="fa fa-comment-o" aria-hidden="true"></i>
-                        <p>Inscreva-se em nosso processo seletivo para o time academy de LOL 2021!!! Entre em nosso perfil para mais detalhes</p>
-                    </div>   
+                <li class = 'postar_bottom'>
+                    <input type="button" value="Voltar" class="voltar" onclick="location.href= 'inscricao_F2.html';">
+                    <input class="enviar_p" type="submit" value="Compartilhar Post" onclick="location.href='perfil_jogador_F2_postado.html';">
                 </li>
             </ul>
         </main>
-        <footer>    
+        <footer>
             <div class="footer">
                 <i class="fa fa-home" aria-hidden="true"></i>
                 <i class="fa fa-search" aria-hidden="true"></i>

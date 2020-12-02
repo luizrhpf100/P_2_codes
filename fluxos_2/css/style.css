@@ -104,10 +104,7 @@ main{
 .footer .fa-search{
     font-size: 1.5rem !important;
 }
-
-
 /* intro*/
-
 .intro{
     display: flex;
     flex-direction: column;
@@ -131,8 +128,8 @@ main{
     height: 10rem;
     width: 10rem;
 }
-
 /* para a tela menu */
+
 .menu{
     display: flex;
     flex-grow: 1;
@@ -160,13 +157,12 @@ main{
     font-size: 2rem;
     color: #434961;
     box-shadow: inset 0.01rem 0 0.3rem 0 #434961;
-
 }
+
 .post-1{
     position: relative;
     flex-direction: column;
     justify-content: space-between;
-    
     
 }
 
@@ -181,7 +177,7 @@ main{
 .profile p{
     font-size: 1rem;
     font-family: 'PT Serif', serif;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .fa-user{
@@ -240,7 +236,6 @@ main{
     font-size: 1rem;
     font-family: 'PT Serif', serif;
     color: black;
-    text-decoration: none;
 }
 
 .post-2 img{
@@ -264,13 +259,15 @@ main{
     font-size: 4.5rem !important;
 }
 
-/* Tela perfil time*/
+/* Tela perfil jogador*/
 
 .pain-ul {
     display: flex;
     width: 100%;
+    height: 100%;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 .nome_pagina{
     display: flex;
@@ -295,6 +292,12 @@ main{
     align-items: flex-start;
 }
 
+.subtop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .contadores{
     display: flex;
     flex-direction: row;
@@ -304,14 +307,26 @@ main{
     box-shadow: inset 0.01rem 0 0.3rem 0 #434961;
 }
 
-.Seguidores{
+.seguidores{
     border: .1rem solid black;
     border-left: 0rem;
-    padding: 0.5rem;
-    margin-right: 1%;
     height: 2rem;
+    padding: 0.5rem;
 }
-
+.num{
+    padding-left: 1rem;
+    font-size: 0.75rem;
+    font-family: 'PT Serif', serif;
+}
+.num-2{
+    font-size: 0.75rem;
+    font-family: 'PT Serif', serif;
+}
+.palavra{
+    text-decoration: underline;
+    font-size: 0.75rem;
+    font-family: 'PT Serif', serif;
+}
 .Posts{
     border: .1rem solid black;
     border-right: 0rem;
@@ -320,22 +335,17 @@ main{
     height: 2rem;
 }
 
-
-.num{
-    font-size: 0.75rem;
+.subtop .botão_Estatísticas{
+    display: flex;
+    border: .1rem solid black;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    margin-right: 0.5rem !important;
+    box-shadow: inset 0.01rem 0 0.3rem 0 #434961;
+    font-size: 1rem;
     font-family: 'PT Serif', serif;
-}
-
-.num-2{
-    font-size: 0.75rem;
-    font-family: 'PT Serif', serif;
-}
-
-
-.palavra{
-    text-decoration: underline;
-    font-size: 0.75rem;
-    font-family: 'PT Serif', serif;
+    color: black;
+    text-decoration: none;
 }
 
 .pain img {
@@ -368,7 +378,6 @@ main{
 
 .status a{
     color: black;
-    text-decoration: none;
     font-weight: bolder
 }
 
@@ -399,108 +408,56 @@ main{
     font-size: 3rem;
 }
 
-/*Inscrição*/
-
-.main_inscricao{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    width: 100%;
-    height: 100%;
-}
-.Titulo{
-    display: flex;
-    width: 100%;
-    border-bottom: .1rem solid black; 
-    font-size: 1.5rem;
-    font-family: 'IBM Plex Sans', sans-serif;
-    color:#434961;
-    box-shadow: inset 0.01rem 0 0.3rem 0 #434961;
+.adicionar_post {
+    margin-bottom: 1rem;
 }
 
-.Inscrição{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.Inscrição .form form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.nome, .idade, .cidade, .email {
-    margin-bottom: 0.5rem;
-}
-.Inscrição .form{
-    align-self: center;
-}
-
-.inscricao_bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between !important;
-    padding: 2rem;
- 
-    
-
-}
-
-.inscricao_bottom .voltar{
-    font-size: 1rem;
-    font-family: 'PT Serif', serif;
+.adicionar_post i {
+    font-size: 3rem;
     color: black;
-
-    
-
-}
-.inscricao_bottom .enviar_ins {
-    font-size: 1rem;
-    font-family: 'PT Serif', serif;
-    color: black;
-    
 }
 
-/* publicar */
 
-.publicar_main{
+/* Tela postando*/
+
+
+.menu_postando{
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     justify-content: flex-start;
 }
-.publicar{
+.postando{
     width: 100%;
     height: 100%;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-.Postar {
+.postar_postando {
     align-self: flex-start;
     width: 100%;
     border-bottom: .1rem solid black;
-
-}
-.Postar p{
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 2rem;
     color: #434961;
     box-shadow: inset 0.01rem 0 0.3rem 0 #434961;
+
 }
 
-.publicar_post{
-    border: .1rem solid black;
-    padding: 1rem;
+.publicar_video{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.publicar_video video{
+    height: 14rem;
+    width: 14rem;
 }
 
-.publicar_top form{
+.postando_top form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -512,7 +469,7 @@ main{
     margin: 0.2rem;
 }
 
-.profile_p{
+.profile_postando{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -520,28 +477,162 @@ main{
     margin-bottom: 0.5rem;
 }
 
-.profile_p p{
+.profile_postando p{
     font-size: 1rem;
     font-family: 'PT Serif', serif;
 }
 
-.publicar_bottom{
+.postar_bottom{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 3rem;
+
 }
 
-.publicar_bottom .voltar {
+.postar_bottom .voltar {
     font-size: 1rem;
     font-family: 'PT Serif', serif;
     color: black;
+    text-decoration: none;
+
 }
 
-.publicar_bottom .compartilhar_pu {
+.postar_bottom .enviar_p {
     font-size: 1rem;
     font-family: 'PT Serif', serif;
     color: black;
+    text-decoration: none;
+
+}
+
+/* para a tela menu final */
+
+.post-1 video{
+    display: block;
+    position: relative;
+    align-self: center;
+    height: 12rem;
+    width: 14rem;
+    border: .1rem solid black;
+    padding: 0.5rem;
+}
+
+.video {
+    width: 88%;
+    display: flex;
+    justify-content: center;
+}
+
+.like_depois{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.like_depois p {
+    font-size: 1rem;
+    font-family: 'PT Serif', serif;
+}
+
+.like_depois .fa-heart-o{
+    margin-left: 0.5rem;
+}
+
+.like_depois .fa-comment-o {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.feed_postado{
+    align-self: flex-start;
+    width: 100%;
+    border-bottom: .1rem solid black;
+    font-family: 'PT Serif', serif;
+    font-size: 2rem;
+    color: #434961;
+    box-shadow: inset 0.01rem 0 0.3rem 0 #434961;
+}
+
+.fa-user{
+    color: black;
+}
+
+/*minhas_estatisticas*/
+
+
+.estat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo_estat{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2rem;
+    color: #434961;
+}
+.ul_estat{
+    display: flex;
+    height: 70%;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #C76051;
+    align-self: center;
+    box-shadow: inset 0.01rem 0 0.3rem 0 #000000;
+}
+
+.textos{
+    display: flex;
+    flex-grow: 0.6;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.textos p{
+    padding-left: 1rem;
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
 }
 
 
+.form_estat{
+    display: flex;
+    flex-grow: 0.2;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+}
+
+.form_estat_filho label{
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+    padding-left: 0.2rem;
+}
+
+.botoes{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+
+.botoes .enviar_p{
+    font-size: 1rem;
+    font-family: 'PT Serif', serif;
+    color: black;
+
+}
+
+.botoes .voltar{
+    font-size: 1rem;
+    font-family: 'PT Serif', serif;
+    color: black;
+
+
+}
